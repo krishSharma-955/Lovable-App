@@ -1,11 +1,10 @@
 package com.SpringBoot.Lovable_App.Service;
 
 import com.SpringBoot.Lovable_App.Dto.Subscription.PlanLimitsResponse;
-import com.SpringBoot.Lovable_App.Dto.Subscription.UsageResponseToday;
-import org.jspecify.annotations.Nullable;
+import com.SpringBoot.Lovable_App.Dto.Subscription.UsageTodayResponse;
 
 public interface UsageService {
-    UsageResponseToday getTodayUsage(Long userId);
+    UsageTodayResponse getTodayUsage(Long userId);
 
     PlanLimitsResponse getCurrentSubscriptionLimitsOfUser(Long userId);
 }
